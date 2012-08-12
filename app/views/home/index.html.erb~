@@ -1,0 +1,33 @@
+<h1 class="hide">JSNet Solution</h1>
+<p class="hide">Find me in app/views/home/index.html.erb</p>
+<div class="row-fluid">
+<div id="ei-slider" class="ei-slider">
+  <ul class="ei-slider-large">
+    <li>
+      <%= image_tag("large/1.jpg") %>
+      <div class="ei-title">
+        <h2>Servicios</h2>
+        <h3>Hola</h3>
+      </div>
+    </li>
+    <li>
+      <%= image_tag("large/2.jpg") %>
+        <div class="ei-title">
+          <h2>Creative</h2>
+          <h3>Geek</h3>
+        </div>
+    </li>
+  </ul>
+  <ul class="ei-slider-thumbs">
+    <li class="ei-slider-element">Current</li>
+    <li>
+      <a href="#  ">Slide 1</a>
+      <%= image_tag("thumb/1.jpg") %>
+    </li>
+    <li>
+      <a href="#">Slide 1</a>
+      <%= image_tag("thumb/2.jpg") %>
+    </li>
+  </ul>
+</div>
+</div>
