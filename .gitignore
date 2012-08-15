@@ -13,3 +13,10 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+
+# Ignorando archivos innecesarios
+*~
+.DS_Store
+*.swp
+/spec/tmp/*

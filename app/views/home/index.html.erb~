@@ -21,7 +21,7 @@
   <ul class="ei-slider-thumbs">
     <li class="ei-slider-element">Current</li>
     <li>
-      <a href="#  ">Slide 1</a>
+      <a href="#">Slide 1</a>
       <%= image_tag("thumb/1.jpg") %>
     </li>
     <li>
