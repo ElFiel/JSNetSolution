@@ -23,6 +23,9 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+
+  gem "twitter-bootstrap-rails"
+  gem "simple_form"
 end
 
 gem 'jquery-rails'
@@ -43,5 +46,3 @@ gem "taps"
 # To use debugger
 # gem 'debugger'
 
-gem "twitter-bootstrap-rails"
-gem "simple_form"
