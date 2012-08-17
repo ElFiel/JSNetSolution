@@ -30,6 +30,8 @@ end
 
 gem 'jquery-rails'
 gem "taps"
+gem "cancan"
+gem "devise", "1.1.rc0"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -16,10 +16,13 @@
 
 
 # Ignorando archivos innecesarios
-*~
-.DS_Store
+
 *.swp
+*~
+.erb~
+.project
+.DS_Store
 /spec/tmp/*
 
 .git/*
-*~
+
