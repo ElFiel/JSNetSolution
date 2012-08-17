@@ -19,7 +19,14 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+  #adapter: sqlite3
+  #database: db/production.sqlite3
+  #pool: 5
+  #timeout: 5000
+  adapter: mysql2
+  encoding: utf8
+  database: rafa24_jsnetsolution
+  username: rafa24_jsnet
+  password: g5s4n1t0
+  socket: /var/lib/mysql/mysql.sock
+  host: gator1309.hostgator.com
