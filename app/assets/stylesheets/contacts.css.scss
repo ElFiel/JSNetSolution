@@ -1,3 +1,26 @@
 // Place all the styles related to the Contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1{
+  color: #FFFFFF;
+}
+#form-contact-title{
+  //background-color: #002F3F;
+  background-color: #2C2C2C;
+  padding: 5px 0;
+}
+label{ 
+  font-size: 14px;
+}
+select{
+  width:100%;
+}
+#form-contact
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="color"]
+{
+  font-size: 14px;
+}

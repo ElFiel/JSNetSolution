@@ -1,6 +1,12 @@
 class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.json
+  before_filter :set_vars
+  
+
+  def set_vars
+    @themes = ['Consulta...','Presupuesto']
+  end
   def index
     @contacts = Contact.all
 
@@ -24,6 +30,7 @@ class ContactsController < ApplicationController
   # GET /contacts/new
   # GET /contacts/new.json
   def new
+    
     @contact = Contact.new
 
     respond_to do |format|

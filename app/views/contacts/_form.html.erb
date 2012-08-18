@@ -11,27 +11,32 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+  <div>
+    <%= f.label :name %>
+    <div class="controls">
+      <%= f.text_field :name, :placeholder => "Ingrese su Nombre", :class=>"span12" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
+  <div class="control-group">
+    <%= f.label :email %>
+    <div class="controls">
+      <%= f.text_field :email, :placeholder => "Ingrese su email", :class=>"span12" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :theme %><br />
-    <%= f.text_field :theme %>
+  <div class="control-group">
+    <%= f.label :theme %>
+    <div class="controls">
+      <%= f.select :theme, options_for_select(@themes), :class=>"span12" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :content %><br />
-    <%= f.text_area :content %>
+  <div class="control-group">
+    <%= f.label :content %>
+    <div class="controls">
+      <%= f.text_area :content, :size => "30x8", :placeholder => "Ingrese su mensaje", :class=>"span12" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :otros %><br />
-    <%= f.text_field :otros %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="right">
+    <%= f.button "Cancelar" %>
+    <%= f.submit "Enviar mensaje" %>
   </div>
 <% end %>
