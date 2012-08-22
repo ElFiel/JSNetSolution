@@ -2,9 +2,15 @@
   <div class="navbar navbar_footer">
     <div class="navbar-inner">
       <ul class="nav">
-        <li> <span class="txt_center"><%= raw("©2012 " + link_to("JSNet Solution", home_path) + ", All Rights Reserved. " )%> </li>
-        <li> <%= link_to "Contacto", new_contact_path %> </li>
+        <li> <span class="txt_center"> ©2012 </span> </li>
+        <li> <%= link_to("JSNet Solution", home_path) %> </li>
+        <li> <span class="txt_center"> All Rights Reserved. </span> </li>
       </ul>
+      <div class="pull-right">
+        <ul class="nav">
+          <li> <%= link_to "Contacto", new_contact_path %> </li>      
+        </ul>
+      </div>
     </div>
   </div>
 </div>

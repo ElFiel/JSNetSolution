@@ -9,11 +9,9 @@ h1{
   background-color: #2C2C2C;
   padding: 5px 0;
 }
-label{ 
+label.control-label{ 
   font-size: 14px;
-}
-select{
-  width:100%;
+  width: 100px;
 }
 #form-contact
 textarea,
