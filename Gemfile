@@ -12,7 +12,6 @@ group :production do
   gem "pg"
   gem "heroku_external_db"
   gem "mysql2"
-  gem "thin"
 end
 
 # Gems used only for assets and not required
