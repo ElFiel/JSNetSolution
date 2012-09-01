@@ -1,7 +1,10 @@
 <div id="navbar-top" class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <div class="nav-collapse pull-right">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target="#nav-social">
+        <span class="icon-th-list"> Redes Sociales
+      </a>
+      <div id="nav-social" class="nav-collapse pull-right">
         <ul class="nav nav-header">
           <li> <%= link_to "Face", home_path %> </li>
           <li> <%= link_to "Twitter", home_path %> </li>
@@ -20,18 +23,17 @@
   <div class="navbar-inner">
     <div class="container">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <a class="btn btn-navbar" data-toggle="collapse" data-target="#nav-menu">
+        <span class="icon-th-list icon-white"> </span> <span> Opciones de Navegacion </span>
       </a>
-      <div class="nav-collapse">
-        <%= link_to "Nombre Proyecto", home_path, :class=>"brand" %>
+      <%= link_to "Nombre Proyecto", home_path, :class=>"brand" %>
+      <div id="nav-menu" class="nav-collapse">
         <ul class="nav nav-header">
-          <li> <%= link_to "Home", home_path %></li>
-          <li> <%= link_to "Nosotros", home_path %></li>
-          <li> <%= link_to "Servicios", "/servicios" %></li>
-          <li> <%= link_to "Contacto", new_contact_path %> </li>
+          <li> <a href="<%= home_path %>"> <i class="icon-home icon-white"></i> Home </a> </li>
+          <li> <a href="/nosotros"> <i class="icon-briefcase icon-white"></i> Nosotros </a> </li>
+          <li> <a href="/servicios"> <i class="icon-wrench icon-white"></i> Servicios </a> </li>
+          <!-- <li> <a href="/servicios"> <i class="icon-globe icon-white"></i> Servicios </a> </li> -->
+          <li> <a href="<%= new_contact_path %>"> <i class="icon-envelope icon-white"></i> Contacto </a> </li>
           <li> <a href="#"><i class="icon-search"></i></a></li>
         </ul>
       </div>
