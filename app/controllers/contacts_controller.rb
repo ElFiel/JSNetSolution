@@ -2,10 +2,9 @@ class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.json
   before_filter :set_vars
-  
 
   def set_vars
-    @themes = ['Consulta...','Presupuesto']
+    @themes = ['Consulta','Cotizacion']
   end
   def index
     @contacts = Contact.all

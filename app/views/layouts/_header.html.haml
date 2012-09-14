@@ -1,0 +1,42 @@
+%div#navbar-top.navbar.navbar-fixed-top
+  %div.navbar-inner
+    %div.container
+      %a.btn.btn-navbar{"data-toggle"=>"collapse", "data-target"=>"#nav-social"}
+        %span.icon-th-list
+          Redes Sociales
+      %div#nav-social.nav-collapse.pull-right
+        %ul.nav.nav-header
+          %li= link_to "Face", home_path
+          %li= link_to "Twitter", home_path
+
+%div.row-fluid
+  %div#logo.span4{:style=>"height:120px; background-color:#777;"} logo
+  %div.span3
+  %div#slogan.span5 slogan
+%div.navbar
+  %div.navbar-inner
+    %div.container
+      //.btn-navbar is used as the toggle for collapsed navbar content
+      %a.btn.btn-navbar{"data-toggle"=>"collapse", "data-target"=>"#nav-menu"}
+        %span.icon-th-list.icon-white 
+        %span Opciones de Navegacion
+      = link_to "Nombre Proyecto", home_path, :class=>"brand"
+      %div#nav-menu.nav-collapse
+        %ul.nav.nav-header
+          %li
+            = link_to home_path do
+              %i.icon-home.icon-white 
+              Home
+          %li
+            = link_to "/nosotros" do
+              %i.icon-briefcase.icon-white
+              Nosotros
+          %li
+            = link_to "/servicios" do
+              %i.icon-wrench.icon-white
+              Servicios
+          //<li> <a href="/servicios"> <i class="icon-globe icon-white"></i> Servicios </a> </li>
+          %li
+            = link_to new_contact_path do
+              %i.icon-envelope.icon-white
+              Contacto
