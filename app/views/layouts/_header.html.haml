@@ -6,13 +6,23 @@
           Redes Sociales
       %div#nav-social.nav-collapse.pull-right
         %ul.nav.nav-header
-          %li= link_to "Face", home_path
-          %li= link_to "Twitter", home_path
+          %li
+            .txt_middle Siguenos :
+          %li
+            = link_to home_path, {:class => "btn_social"} do
+              = image_tag "facebook_32.png"
+          %li
+            = link_to home_path, {:class => "btn_social"} do
+              = image_tag "twitter_32.png"
 
 %div.row-fluid
-  %div#logo.span4{:style=>"height:120px; background-color:#777;"} logo
-  %div.span3
-  %div#slogan.span5 slogan
+  %div#logo.span3 logo
+  %div#publi1.span9
+    .span12
+      .span1
+      .span11
+        #title-publi1.row-fluid.pull-right.center publicidad
+        #body-publi1.row-fluid.pull-right.center
 %div.navbar
   %div.navbar-inner
     %div.container

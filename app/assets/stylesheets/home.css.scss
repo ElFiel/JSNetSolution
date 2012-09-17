@@ -13,7 +13,7 @@ body{
 .navbar_footer{
   margin-top:20px;
 }
-.navbar .nav > li > .txt_center {
+.navbar .nav > li > .txt_middle {
   float: left;
   padding: 9px 0 5px;
   line-height: 19px;
@@ -22,4 +22,19 @@ body{
 }
 .navbar .nav > li > .txt_center > a {
   color: #999999;
+}
+.navbar .nav > li > .btn_social {
+  padding: 4px;
+}
+#logo{
+  height: 120px;
+  background-color: #777;
+}
+#title-publi1{
+  height: 30px;
+  background-color: #999;
+}
+#body-publi1{
+  height: 90px;
+  background-color: #888;
 }
