@@ -1,0 +1,35 @@
+= form_for(@contact, :html => {:class => "form-horizontal"}) do |f|
+
+  = render "shared/error_messages", :target => @contact
+
+  .form-inputs
+    .control-group
+      = f.label :name, :class => "control-label"
+      .controls
+        .input-prepend.row-fluid
+          %span.add-on.pull-left
+            %i.icon-user
+          = f.text_field :name, :placeholder => "Ingrese su Nombre", :class=>"span9"
+    .control-group
+      = f.label :email, :class => "control-label"
+      .controls
+        .input-prepend.row-fluid
+          %span.add-on.pull-left
+            %i.icon-envelope
+          = f.text_field :email, :placeholder => "Ingrese su email", :class=>"span9"
+
+    .control-group
+      = f.label :theme, :class => "control-label"
+      .controls
+        = f.select :theme, options_for_select(@themes), :html_options =>{:class=>"span9"}
+
+    .control-group
+      = f.label :content, :class => "control-label"
+      .controls
+        = f.text_area :content, :size => "30x8", :placeholder => "Ingrese su mensaje", :class=>"span10"
+
+    .control-group
+      .controls
+        .span10.align-right
+          = f.button "Cancelar"
+          = f.submit "Enviar mensaje"
