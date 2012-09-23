@@ -21,8 +21,8 @@
     .control-group
       = f.label :theme, :class => "control-label"
       .controls
-        = f.select :theme, options_for_select(@themes), :html_options =>{:class=>"span9"}
-
+        = select_tag(:contact_theme, options_for_select(@themes), :class=>"span10", :name=>"contact[theme]")
+        /id contact_theme, name contact[theme]
     .control-group
       = f.label :content, :class => "control-label"
       .controls
