@@ -1,3 +1,21 @@
 %h1 Nuestros Servicios
 %p Servicios
 .row-fluid
+  .span8.well
+    / Revisar por que no funca el Accordion con el collapse - Usamos Tabs
+    %ul.nav.nav-tabs#myTab
+      %li.active
+        = link_to "Div 1", "#1", "data-toggle"=>"tab"
+      %li
+        = link_to "Div 2", "#2", "data-toggle"=>"tab"
+      %li
+        = link_to "Div 3", "#3", "data-toggle"=>"tab"
+       
+    .tab-content
+      .tab-pane.active#1
+        bla1 bla1 bla1
+      .tab-pane#2
+        bla2 bla2 bla2
+      .tab-pane#3
+        bla3 bla3 bla3
+  .span4.well
