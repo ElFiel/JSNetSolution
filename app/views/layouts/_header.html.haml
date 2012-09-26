@@ -1,38 +1,12 @@
-%div#navbar-top.navbar.navbar-fixed-top
-  %div.navbar-inner
-    %div.container
+#navbar-top.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
       %a.btn.btn-navbar{"data-toggle"=>"collapse", "data-target"=>"#nav-social"}
         %span.icon-th-list
-          Redes Sociales
-      %div#nav-social.nav-collapse.pull-right
-        %ul.nav.nav-header
-          %li
-            .txt_middle Siguenos :
-          %li
-            = link_to "#{LINK_FACEBOOK}", {:class => "btn_social"} do
-              = image_tag "facebook_32.png"
-          %li
-            = link_to "#{LINK_TWITTER}", {:class => "btn_social"} do
-              = image_tag "twitter_32.png"
-
-%div.row-fluid
-  %div#logo.span3 logo
-  %div#publi1.span9
-    .span12
-      .span1
-      .span11
-        #title-publi1.row-fluid.pull-right.align-center publicidad
-        #body-publi1.row-fluid.pull-right.align-center
-%div.navbar
-  %div.navbar-inner
-    %div.container
-      //.btn-navbar is used as the toggle for collapsed navbar content
-      %a.btn.btn-navbar{"data-toggle"=>"collapse", "data-target"=>"#nav-menu"}
-        %span.icon-th-list.icon-white 
-        %span Opciones de Navegacion
+          Opciones de Navegación
       = link_to home_path, :class=>"brand" do
         JSNetSolution
-      %div#nav-menu.nav-collapse
+      #nav-menu.nav-collapse
         %ul.nav.nav-header
           %li
             = link_to home_path do
@@ -51,3 +25,24 @@
             = link_to new_contact_path do
               %i.icon-envelope.icon-white
               Contacto
+      #nav-social.nav-collapse.pull-right
+        %ul.nav.nav-header
+          %li
+            .txt_middle Siguenos :
+          %li
+            = link_to "#{LINK_FACEBOOK}", {:class => "btn_social"} do
+              = image_tag "facebook_32.png"
+          %li
+            = link_to "#{LINK_TWITTER}", {:class => "btn_social"} do
+              = image_tag "twitter_32.png"
+
+.row-fluid
+  .span12.well
+    #logo.span3 
+      = image_tag("logo_tmp1.png", :class=>"img_logo")
+    #publi1.span9
+      .span12.align-right
+        %p
+        #title-publi1.align-center.con_pre=texto_vertical("PUBLI")
+        #body-publi1.row-fluid.align-center
+          = image_tag("780x90.gif", :class=>"publi1")

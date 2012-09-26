@@ -1,23 +1,26 @@
 !!! 5
 /!DOCTYPE html
 %html(lang="en")
-%head
-  %title Jsnetsolution
-  = stylesheet_link_tag "application", :media => "all"
-  /[if lt IE 9]
-    /<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    = javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"
-  /[endif]
-  = javascript_include_tag "application"
-  = csrf_meta_tags
-  %meta{"name"=>"viewport", "content"=>"width=devise-width, initial-scale=1.0"}
-  = google_analytics
-%body
-  %header.container
-    = render partial: "layouts/header"
+  %head
+    %title 
+      = page_title
+    = stylesheet_link_tag "application", :media => "all"
+    /[if lt IE 9]
+      /<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      = javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"
+    /[endif]
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    %meta(charset="utf-8")
+    %meta{"name"=>"viewport", "content"=>"width=devise-width, initial-scale=1.0"}
+    %meta{"name"=>"description", "content"=>"#{page_description}"}
+    = google_analytics
+  %body
+    %header.container
+      = render partial: "layouts/header"
 
-  %div.container
-    = yield
+    %div.container
+      = yield
 
-  %footer.container
-    = render partial: "layouts/footer"
+    %footer.container
+      = render partial: "layouts/footer"

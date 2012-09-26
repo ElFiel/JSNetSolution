@@ -1,3 +1,4 @@
+# coding: utf-8
 module ApplicationHelper
 
 def google_analytics
@@ -20,5 +21,28 @@ HTML
   txt.html_safe
 end
 
+# ----- SEO ----->
+def page_title
+  @title  ||  "JsnetSolution, diseño y desarrollo web"
+end
+
+def poner_title(text)
+  @title  = text
+end
+
+def page_description
+  @content  ||  "JsnetSolution, Agencia de diseño y desarrollo web de calidad con personal calificado, visualiza tus sitios en Pcs, tablets y hasta móviles sin gastar mas."
+end
+
+def poner_description(text)
+  @content  = text
+end
+
+# ----- FIN SEO ---->
+
+def texto_vertical(texto)
+  texto.split('').join('<br>').html_safe
+  #Funciona con clase .con_pre
+end
 
 end

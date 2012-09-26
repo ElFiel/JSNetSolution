@@ -1,9 +1,6 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body{
-  padding: 40px 0 0 ;
-}
 
 // Modificando el bootstrap
 
@@ -28,13 +25,30 @@ body{
 }
 #logo{
   height: 120px;
-  background-color: #777;
 }
+  .img_logo{
+    max-width: 260px;
+    max-height: 120px;
+  }
 #title-publi1{
-  height: 30px;
-  background-color: #999;
+  float: right;
+  width: 20px;
+  max-height: 90px;
+  border: 1px solid #D8D8D8;
 }
 #body-publi1{
+  float: right;
   height: 90px;
-  background-color: #888;
+  max-width: 780px;
+}
+  .publi1{
+    max-width: 780px;
+    max-height: 90px;
+  }
+.publi2{
+  max-width: 300px;
+  max-height: 250px;
+}
+.con_pre{
+  white-space: pre;
 }

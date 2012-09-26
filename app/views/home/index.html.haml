@@ -1,6 +1,4 @@
-%h1.hide JSNetSolution
-%p.hide 
-  Web en Construccion
+%h1.hide = @title
 .row-fluid
   .span8
     #myCarousel1.carousel.slide
@@ -23,8 +21,8 @@
       %a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel1"} ‹
       %a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel1"} ›
 
-  .span4.well
-    Publicidad
+  .span4.well.align-center
+    = image_tag("300x250.gif", :class=>"publi2")
 
 .row-fluid
   .span4.well
