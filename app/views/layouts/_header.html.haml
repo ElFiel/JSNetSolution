@@ -1,12 +1,13 @@
 #navbar-top.navbar.navbar-fixed-top
   .navbar-inner
     .container
-      %a.btn.btn-navbar{"data-toggle"=>"collapse", "data-target"=>"#nav-social"}
-        %span.icon-th-list
-          Opciones de Navegación
+      /%a.btn.btn-navbar{"data-toggle"=>"collapse", "data-target"=>"#nav-menu"}
+      /  %span.icon-th-list
+      /    Opciones de Navegación
       = link_to home_path, :class=>"brand" do
         JSNetSolution
-      #nav-menu.nav-collapse
+      /#nav-menu.nav-collapse
+      #nav-menu
         %ul.nav.nav-header
           %li
             = link_to home_path do
@@ -25,24 +26,27 @@
             = link_to new_contact_path do
               %i.icon-envelope.icon-white
               Contacto
-      #nav-social.nav-collapse.pull-right
+      /#nav-social.nav-collapse.pull-right
+      #nav-social.pull-right
         %ul.nav.nav-header
           %li
-            .txt_middle Siguenos :
+            .txt_middle.collapse Siguenos :
           %li
             = link_to "#{LINK_FACEBOOK}", {:class => "btn_social"} do
               = image_tag "facebook_32.png"
           %li
             = link_to "#{LINK_TWITTER}", {:class => "btn_social"} do
               = image_tag "twitter_32.png"
-
 .row-fluid
   .span12.well
     #logo.span3 
-      = image_tag("logo_tmp1.png", :class=>"img_logo")
+      = image_tag("logo_tmp1.png")
     #publi1.span9
-      .span12.align-right
+      .row-fluid
         %p
-        #title-publi1.align-center.con_pre=texto_vertical("PUBLI")
-        #body-publi1.row-fluid.align-center
-          = image_tag("780x90.gif", :class=>"publi1")
+      .row-fluid#publi1
+        .pull-right.align-center#title-publi1
+          = image_tag("titulo_publicidad1.png")
+        .pull-right.align-center#body-publi1
+          = render partial: "layouts/publi1"
+          / Cambiar por imagen de 50 - 54 de altura | sino no redimensiona bien o .collapse

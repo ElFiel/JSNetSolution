@@ -26,9 +26,26 @@
 //
 // Example:
 // @linkColor: #ff0000;
-
-//body{ background-color: #81BEF7;}
-body{ padding: 60px 0 0;}
+.white{ color:@white;}
+body{
+  padding: 40px 0 0;
+//  background-color: #3A87AD;  // celeste oscuro
+//  background-color: #A9D0F5;  // celeste claro
+  background-color: #EBEBEB;  // plomo claro (youtube)
+//  background-color: #2C2C2C;  // seminegro
+}
+header{
+  .container{
+    //width: 100%;
+    //margin: 0;
+  }
+  .well{
+    //background-color: #EBEBEB;  // plomo claro (youtube)
+  }
+}
+.well{
+  border-color: #BDBDBD;  // plomo
+}
 .align-center{ text-align: center; }
 .align-right{ text-align: right; }
 .align-left{ text-align: left; }
@@ -37,3 +54,10 @@ body{ padding: 60px 0 0;}
 //  .opacity(75)
 }
 //h1{ font-size: 20px; line-height: 1; }  //para nav
+
+#container #well{
+//  background-color: #000;
+}
+hr.dashed{
+  border-top: 1px dashed #3A87AD;
+}

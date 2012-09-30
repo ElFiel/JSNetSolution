@@ -10,7 +10,7 @@
 .navbar_footer{
   margin-top:20px;
 }
-.navbar .nav > li > .txt_middle {
+.navbar .nav > li > .txt_middle_nav {
   float: left;
   padding: 9px 0 5px;
   line-height: 19px;
@@ -24,31 +24,33 @@
   padding: 4px;
 }
 #logo{
-  height: 120px;
+  max-width: 260px;
+  max-height: 120px;
 }
-  .img_logo{
-    max-width: 260px;
-    max-height: 120px;
-  }
-#title-publi1{
-  float: right;
-  width: 20px;
-  max-height: 90px;
-  border: 1px solid #D8D8D8;
-}
-#body-publi1{
-  float: right;
-  height: 90px;
-  max-width: 780px;
-}
-  .publi1{
-    max-width: 780px;
+#publi1{
+  #title-publi1{
+    max-width: 20px;
     max-height: 90px;
+    //border: 1px solid #D8D8D8;
+    border-right: 1px solid #D8D8D8;
   }
-.publi2{
-  max-width: 300px;
-  max-height: 250px;
+  #body-publi1{
+    max-height: 90px;
+    max-width: 780px;
+  }
+  .row-fluid .span1{
+    margin: 0;
+  }
+}
+#well{
+  .well{
+    //background-color: #EBEBEB;  // plomo claro (youtube)
+  }
 }
 .con_pre{
   white-space: pre;
 }
+#myCarousel1{
+  margin: 0;
+}
+

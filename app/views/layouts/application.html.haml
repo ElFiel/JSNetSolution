@@ -19,8 +19,9 @@
     %header.container
       = render partial: "layouts/header"
 
-    %div.container
-      = yield
+    %div.container#container
+      .well#well
+        = yield
 
     %footer.container
       = render partial: "layouts/footer"
