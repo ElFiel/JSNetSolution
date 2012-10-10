@@ -23,15 +23,17 @@ end
 
 # ----- SEO ----->
 def page_title
-  @title  ||  "JsnetSolution, diseño y desarrollo web"
+  @title  ||  "JSnet Solution, diseño y desarrollo web"
+  #@h1 || params[:page]
 end
 
 def poner_title(text)
-  @title  = text
+  @title  = "#{text} || JSnet Solution"
+  @h1     = "#{text}"
 end
 
 def page_description
-  @content  ||  "JsnetSolution, Agencia de diseño y desarrollo web de calidad con personal calificado, visualiza tus sitios en Pcs, tablets y hasta móviles sin gastar mas."
+  @content  ||  "JSnet Solution, Agencia de diseño y desarrollo web de calidad con personal calificado, visualiza tus sitios en Pcs, tablets y hasta móviles sin gastar mas."
 end
 
 def poner_description(text)

@@ -4,8 +4,7 @@
       /%a.btn.btn-navbar{"data-toggle"=>"collapse", "data-target"=>"#nav-menu"}
       /  %span.icon-th-list
       /    Opciones de Navegación
-      = link_to home_path, :class=>"brand" do
-        JSNetSolution
+      = link_to "JSNetSolution", home_path, :class=>"brand"        
       /#nav-menu.nav-collapse
       #nav-menu
         %ul.nav.nav-header
@@ -45,8 +44,5 @@
       .row-fluid
         %p
       .row-fluid#publi1
-        .pull-right.align-center#title-publi1
-          = image_tag("titulo_publicidad1.png")
-        .pull-right.align-center#body-publi1
+        .pull-right.row-fluid#body-publi1
           = render partial: "layouts/publi1"
-          / Cambiar por imagen de 50 - 54 de altura | sino no redimensiona bien o .collapse
