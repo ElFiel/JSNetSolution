@@ -31,5 +31,5 @@
     .control-group
       .controls
         .span10.align-right
-          = f.button "Cancelar"
-          = f.submit "Enviar mensaje"
+          = link_to "Cancelar", home_path, {:class=>"btn", :confirm=>"Aún no envía el mensaje, está seguro de abandonar esta página?"}
+          = f.submit "Enviar mensaje", :class=>"btn"
