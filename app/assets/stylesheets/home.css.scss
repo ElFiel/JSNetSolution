@@ -1,14 +1,109 @@
+//@import "twitter/bootstrap/variables"; // Modify this for custom colors, font-sizes, etc
+ $gridColumnWidth: 50px;
+ $gridGutterWidth: 20px;
+ $gridColumns: 12;
+
+// $gridRowWidth: ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1)) !default;
+//1000 = (12 * x) + (20 * 11) => x = (980 - 20 * 11)/12 = 63.33
+// +++++++++++++++++++
+
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // Modificando el bootstrap
 
-.nav-header li a{
-  font-size:15px;
+body{
+  padding: 40px 0 0;
+  // padding: 0;
+  // border-top: solid 8px #0088CC;
+  // background-color: #BBCCEE;
+  // background-color: #4D585E;
+  background-color: #F5F5F5;
+//  background-color: #3A87AD;  // celeste oscuro
+//  background-color: #A9D0F5;  // celeste claro
+  //background-color: #EBEBEB;  // plomo claro (youtube)
+//  background-color: #2C2C2C;  // seminegro
 }
-.navbar_footer{
-  margin-top:20px;
+
+header{
+  #navbar-top{
+    margin-bottom: 5px;
+    background-color: #2C2C2C;
+    // border-bottom: solid 4px #0088CC;
+    // .opacity(75)
+    .nav-header li a{
+      font-size:18px;
+      color: #999999;
+    }
+    .brand{
+      color: #EEEEEE;
+      text-shadow: 2px 3px 0 #111111;
+    }
+    #nav-social{
+      max-width: 100px;
+      .navbar .nav > li > .btn_social {
+        padding: 4px;
+      }
+    }
+  }
+  #header{
+    .container{
+      padding-left: 30px;
+    }
+    margin-bottom: 5px;
+    // background-color: #D8D8D8;
+    // background-color: #E6E6E6;
+    background-color: #4D585E;
+    background: url("bg.png") repeat-x;
+    // background-color: #5F04B4;
+    border-bottom: #4d66cf 100px solid;
+    padding-top: 20px;
+    height: 260px;
+    #logo{
+      max-width: 260px;
+      max-height: 120px;
+      // background-image: url("logo_jsnetsolution.png") no-repeat;
+    }
+    #publi1{
+      #body-publi1{
+        max-height: 90px;
+        max-width: 780px;
+      }
+    }
+  }
+}
+
+#well{
+  // border-color: #F5F5F5;
+  border-color: #4D585E;
+  // background-color: #4D585E;
+  // background-color: #BBCCEE;
+  background-color: #F5F5F5;
+  border-radius: 20px;
+  margin-top: -230px;
+  #myCarousel1{
+    margin: 0;
+  }
+}
+
+.well{
+  border-color: #BDBDBD;  // plomo
+}
+
+.con_pre{
+  white-space: pre;
+}
+
+.align-center{ text-align: center; }
+.align-right{ text-align: right; }
+.align-left{ text-align: left; }
+.align-justify{ text-align: justify; }
+//h1{ font-size: 20px; line-height: 1; }  //para nav
+
+.dashed{
+  border-top: 1px dashed #3A87AD;
+  margin: 15px 0 18px;
 }
 .navbar .nav > li > .txt_middle_nav {
   float: left;
@@ -20,28 +115,9 @@
 .navbar .nav > li > .txt_center > a {
   color: #999999;
 }
-.navbar .nav > li > .btn_social {
-  padding: 4px;
-}
-#logo{
-  max-width: 260px;
-  max-height: 120px;
-}
-#publi1{
-  #body-publi1{
-    max-height: 90px;
-    max-width: 780px;
+.navbar_footer{
+  // margin-top:20px;
+  .navbar-inner{
+    border-radius: 0;
   }
 }
-#well{
-  .well{
-    //background-color: #EBEBEB;  // plomo claro (youtube)
-  }
-}
-.con_pre{
-  white-space: pre;
-}
-#myCarousel1{
-  margin: 0;
-}
-

@@ -2,7 +2,7 @@
 /!DOCTYPE html
 %html(lang="en")
   %head
-    %title 
+    %title
       = page_title
     = stylesheet_link_tag "application", :media => "all"
     /[if lt IE 9]
@@ -16,12 +16,13 @@
     %meta{"name"=>"description", "content"=>"#{page_description}"}
     = google_analytics
   %body
-    %header.container
+    %header
+      -# .container
       = render partial: "layouts/header"
 
     %div.container#container
-      .well#well
+      .well#well.span11
         = yield
 
-    %footer.container
+    %footer
       = render partial: "layouts/footer"
