@@ -27,14 +27,22 @@ body{
 }
 
 header{
+  //.navbar .nav .active > a{ background-color: #0088CC;}//celeste
+  .navbar .nav .active > a{
+    background-color: #1d1d1d;
+    color: #EEEEEE;
+  }
   #navbar-top{
-    margin-bottom: 5px;
     background-color: #2C2C2C;
+    margin: 0 0 5px 0;
     // border-bottom: solid 4px #0088CC;
     // .opacity(75)
     .nav-header li a{
       font-size:18px;
       color: #999999;
+    }
+    .nav-header .active a{
+      color: #E0E0E0;
     }
     .brand{
       color: #EEEEEE;
@@ -115,9 +123,15 @@ header{
 .navbar .nav > li > .txt_center > a {
   color: #999999;
 }
-.navbar_footer{
-  // margin-top:20px;
-  .navbar-inner{
-    border-radius: 0;
+footer{
+  .container .row-fluid{
+    padding: 0 30px;
+  }
+  color: #EEEEEE;
+  margin: -50px 0 0;
+  background-color: #222222;
+  .txt-middle{
+    height: 30px;
+    line-height: 0px;
   }
 }

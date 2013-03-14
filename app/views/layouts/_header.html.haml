@@ -1,42 +1,49 @@
 #navbar-top.navbar.navbar-fixed-top
   .navbar-inner
     .container
-      .span11
-        /%a.btn.btn-navbar{"data-toggle"=>"collapse", "data-target"=>"#nav-menu"}
-        /  %span.icon-th-list
-        /    Opciones de Navegación
-        = link_to "JSNet Solution", home_path, :class=>"brand"
-        /#nav-menu.nav-collapse
-        #nav-menu
-          %ul.nav.nav-header
-            %li{:class=>("active" if request[:controller]=="home" and !params[:page] )}
-              = link_to home_path do
-                %i.icon-home.icon-white
-                Home
-            %li{:class=>("active" if request[:controller]=="home" and params[:page]=="nosotros")}
-              = link_to "/nosotros" do
-                %i.icon-briefcase.icon-white
-                Nosotros
-            %li{:class=>("active" if request[:controller]=="home" and params[:page]=="servicios")}
-              = link_to "/servicios" do
-                %i.icon-wrench.icon-white
-                Servicios
-            //<li> <a href="/servicios"> <i class="icon-globe icon-white"></i> Servicios </a> </li>
-            %li{:class=>("active" if request[:controller]=="contacts")}
-              = link_to new_contact_path do
-                %i.icon-envelope.icon-white
-                Contacto
-        /#nav-social.nav-collapse.pull-right
-        #nav-social.pull-right
-          %ul.nav.nav-header
-            %li
-              .txt_middle.collapse Siguenos :
-            %li
-              = link_to "#{LINK_FACEBOOK}", {:class => "btn_social", :target => "_blank"} do
-                = image_tag "facebook_32.png"
-            %li
-              = link_to "#{LINK_TWITTER}", {:class => "btn_social", :target => "_blank"} do
-                = image_tag "twitter_32.png"
+      .span12
+        .span11
+          .row-fluid
+            .span10
+              %a.btn.btn-navbar{"data-toggle"=>"collapse", "data-target"=>"#nav-menu"}
+                %span.icon-th-list
+                  Opciones de Navegación
+              = link_to "JSNet Solution", home_path, :class=>"brand"
+              /#nav-menu.nav-collapse
+              #nav-menu.nav-collapse.collapse
+                %ul.nav.nav-header.nav-pills
+                  %li{:class=>("active" if request[:controller]=="home" and !params[:page] )}
+                    = link_to home_path do
+                      %i.icon-home.icon-white
+                      Home
+                  %li{:class=>("active" if request[:controller]=="home" and params[:page]=="nosotros")}
+                    = link_to "/nosotros" do
+                      %i.icon-briefcase.icon-white
+                      Nosotros
+                  %li{:class=>("active" if request[:controller]=="home" and params[:page]=="servicios")}
+                    = link_to "/servicios" do
+                      %i.icon-wrench.icon-white
+                      Servicios
+                  //<li> <a href="/servicios"> <i class="icon-globe icon-white"></i> Servicios </a> </li>
+                  %li{:class=>("active" if request[:controller]=="contacts")}
+                    = link_to new_contact_path do
+                      %i.icon-envelope.icon-white
+                      Contacto
+            /#nav-social.nav-collapse.pull-right
+            .span2
+              %a.btn.btn-navbar{"data-toggle"=>"collapse", "data-target"=>"#nav-social"}
+                %span.icon-th-list
+                  Menú Social
+              #nav-social.pull-right.nav-collapse.collapse
+                %ul.nav.nav-header
+                  %li
+                    .txt_middle.collapse Siguenos :
+                  %li
+                    = link_to "#{LINK_FACEBOOK}", {:class => "btn_social", :target => "_blank"} do
+                      = image_tag "facebook_32.png"
+                  %li
+                    = link_to "#{LINK_TWITTER}", {:class => "btn_social", :target => "_blank"} do
+                      = image_tag "twitter_32.png"
 
 .row-fluid
   #header

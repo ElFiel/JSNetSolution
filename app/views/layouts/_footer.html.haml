@@ -1,13 +1,29 @@
-%div.row-fluid
-  %div.navbar.navbar_footer
-    %div.navbar-inner
-      %ul.nav
-        %li
-          %span.txt_middle_nav ©2012
-        %li
-          = link_to("JSNet Solution", home_path)
-        %li
-          %span.txt_middle_nav All Rights Reserved.
-      %div.pull-right
-        %ul.nav
-          %li= link_to "Contacto", new_contact_path
+.container
+  -# .row-fluid
+  .span12
+    .span11
+      .pull-left{:style=>"padding-top: 10px;"}
+        ©2013 Copyright
+        = "#{link_to "JSNetSolution", home_path}. All Rights Reserved.".html_safe
+      .pull-right
+        %ul.nav.nav-pills
+          %li{:class=>("active" if request[:controller]=="home" and !params[:page])}
+            = link_to home_path do
+              %i.icon-home.icon-white
+              Home
+          %li.divider
+          %li{:class=>("active" if request[:controller]=="home" and params[:page]=="nosotros")}
+            = link_to "/nosotros" do
+              %i.icon-briefcase.icon-white
+              Nosotros
+          %li.divider
+          %li{:class=>("active" if request[:controller]=="home" and params[:page]=="servicios")}
+            = link_to "/servicios" do
+              %i.icon-wrench.icon-white
+              Servicios
+          %li{:class=>("active" if request[:controller]=="contacts")}
+            = link_to new_contact_path do
+              .white
+                %i.icon-envelope.icon-white
+                Contacto
+
